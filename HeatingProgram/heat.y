@@ -26,8 +26,7 @@ commands:
 
 command:
 	heat_switch
-	|
-	target_set
+	| target_set
 	;
 
 heat_switch:
