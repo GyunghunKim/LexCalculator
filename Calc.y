@@ -1,3 +1,15 @@
+/*
+ * YACC는 문법규칙을 위한 파일이다.
+ * 
+ * lexx.yy.c와 Calc.tab.c를 컴파일하면 컴파일러가 만들어진다.
+ * 
+ * 작성된 컴파일러는 main 함수에서 yyparse()를 호출한다.
+ * 이는 자동적으로 yylex를 호출하여 토큰을 얻어낸다.
+ *
+ * bison 코드는 크게 세 가지 부분으로 이루어진다.
+ * Definitions %% Rules %% Subroutines
+ */
+
 %{
 #include<stdio.h>
 double reg[25];
